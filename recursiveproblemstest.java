@@ -4,49 +4,47 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RecursiveProblemsTest {
 
     @Test
-    void testFactorial() {
-        assertEquals(1, RecursiveProblems.factorial(0));
-        assertEquals(1, RecursiveProblems.factorial(1));
-        assertEquals(2, RecursiveProblems.factorial(2));
-        assertEquals(6, RecursiveProblems.factorial(3));
-        assertEquals(24, RecursiveProblems.factorial(4));
+    void testCount8() {
+        assertEquals(1, RecursiveProblems.count8(8));
+        assertEquals(2, RecursiveProblems.count8(818));
+        assertEquals(4, RecursiveProblems.count8(8818));
+        assertEquals(3, RecursiveProblems.count8(888));
+        assertEquals(0, RecursiveProblems.count8(123));
     }
 
     @Test
-    void testFibonacci() {
-        assertEquals(0, RecursiveProblems.fibonacci(0));
-        assertEquals(1, RecursiveProblems.fibonacci(1));
-        assertEquals(1, RecursiveProblems.fibonacci(2));
-        assertEquals(2, RecursiveProblems.fibonacci(3));
-        assertEquals(3, RecursiveProblems.fibonacci(4));
+    void testCountHi() {
+        assertEquals(1, RecursiveProblems.countHi("xxhixx"));
+        assertEquals(2, RecursiveProblems.countHi("xhixhix"));
+        assertEquals(1, RecursiveProblems.countHi("hi"));
+        assertEquals(0, RecursiveProblems.countHi("h"));
+        assertEquals(3, RecursiveProblems.countHi("hihihi"));
     }
 
     @Test
-    void testSumArray() {
-        int[] arr1 = {};
-        int[] arr2 = {1, 2, 3, 4, 5};
-        assertEquals(0, RecursiveProblems.sumArray(arr1, 0));
-        assertEquals(15, RecursiveProblems.sumArray(arr2, 0));
-        assertEquals(14, RecursiveProblems.sumArray(arr2, 1));
-        assertEquals(5, RecursiveProblems.sumArray(arr2, 4));
-        assertEquals(0, RecursiveProblems.sumArray(arr2, 5));
+    void testCountHi2() {
+        assertEquals(1, RecursiveProblems.countHi2("ahixhi"));
+        assertEquals(2, RecursiveProblems.countHi2("ahibhi"));
+        assertEquals(0, RecursiveProblems.countHi2("xhixhi"));
+        assertEquals(1, RecursiveProblems.countHi2("hihi"));
+        assertEquals(0, RecursiveProblems.countHi2("xhi"));
     }
 
     @Test
-    void testReverseString() {
-        assertEquals("", RecursiveProblems.reverseString(""));
-        assertEquals("a", RecursiveProblems.reverseString("a"));
-        assertEquals("cba", RecursiveProblems.reverseString("abc"));
-        assertEquals("54321", RecursiveProblems.reverseString("12345"));
-        assertEquals("olleh", RecursiveProblems.reverseString("hello"));
+    void testStrCount() {
+        assertEquals(2, RecursiveProblems.strCount("catcowcat", "cat"));
+        assertEquals(1, RecursiveProblems.strCount("catcowcat", "cow"));
+        assertEquals(0, RecursiveProblems.strCount("catcowcat", "dog"));
+        assertEquals(3, RecursiveProblems.strCount("aaaa", "aa"));
+        assertEquals(1, RecursiveProblems.strCount("abcd", "abc"));
     }
 
     @Test
-    void testCountChar() {
-        assertEquals(0, RecursiveProblems.countChar("", 'a'));
-        assertEquals(3, RecursiveProblems.countChar("banana", 'a'));
-        assertEquals(2, RecursiveProblems.countChar("apple", 'p'));
-        assertEquals(1, RecursiveProblems.countChar("orange", 'g'));
-        assertEquals(0, RecursiveProblems.countChar("orange", 'z'));
+    void testStringClean() {
+        assertEquals("yza", RecursiveProblems.stringClean("yyzzza"));
+        assertEquals("abcd", RecursiveProblems.stringClean("abbbcdd"));
+        assertEquals("Helo", RecursiveProblems.stringClean("Hello"));
+        assertEquals("a", RecursiveProblems.stringClean("aa"));
+        assertEquals("abc", RecursiveProblems.stringClean("abc"));
     }
 }

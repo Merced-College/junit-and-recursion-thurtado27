@@ -1,6 +1,6 @@
 public class RecursiveProblems {
 
-    // Problem 1: Factorial
+    // Problem 1: Factorial 
     public static int factorial(int n) {
         if (n <= 1) {
             return 1;
