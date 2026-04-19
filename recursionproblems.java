@@ -1,3 +1,16 @@
+/*
+ * Name: Trinity Hurtado
+ * Date: 04/19/2026
+ * Assignment: Recursion Practice Problems
+ * This class contains recursive methods to solve common problems including:
+ * - Counting the occurrences of the digit 8 with special double-counting rules.
+ * - Counting occurrences of "hi" in a string, with and without exclusions.
+ * - Counting occurrences of a substring in a string without overlapping.
+ * - Cleaning strings by removing consecutive duplicate characters.
+ *
+ * All methods are implemented recursively, without using loops.
+ */
+
 public class RecursiveProblems {
 
     // Problem 1: Factorial 

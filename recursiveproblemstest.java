@@ -1,3 +1,16 @@
+/*
+ * Name: Trinity Hurtado
+ * Date: 04/19/2026
+ * This class contains JUnit 5 tests for the RecursiveProblems class.
+ * Each method in RecursiveProblems has at least 5 test cases.
+ * The tests verify correctness of recursive implementations, including:
+ * - count8 (with double-counting consecutive 8s)
+ * - countHi
+ * - countHi2 (ignoring "hi" preceded by 'x')
+ * - strCount (non-overlapping substrings)
+ * - stringClean (removing consecutive duplicates)
+ */
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
