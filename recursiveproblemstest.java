@@ -8,7 +8,7 @@
  * - countHi
  * - countHi2 (ignoring "hi" preceded by 'x')
  * - strCount (non-overlapping substrings)
- * - stringClean (removing consecutive duplicates)
+ * - stringClean (removing consecutive duplicates) 
  */
 
 import org.junit.jupiter.api.Test;
